@@ -1,0 +1,28 @@
+{
+  "name": "@diplodoc/calc-extension",
+  "version": "0.1.0",
+  "description": "Calculation plugin for Diplodoc",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "npm run build && node --test test/*.cjs"
+  },
+  "dependencies": {
+    "mathjs": "^15.2.0"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.3",
+    "@diplodoc/cli": "5.71.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "@diplodoc/cli": "^5.71.0"
+  }
+}
